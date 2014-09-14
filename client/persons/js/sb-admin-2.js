@@ -95,7 +95,8 @@ var all = [{
 generateContactlist();
 
 function generateContactlist() {
-    console.log('111');
+    console.log('wtf')
+    $(".notification-panel").css("display", "inline-block");
     var search = $("#txtSearch").val();
     //$('#contact-list').append
       $('#contact-list').empty();
@@ -106,8 +107,6 @@ function generateContactlist() {
             contactArr.push(generateContactTemplate(obj.image, obj.name, obj.role, obj.major, obj.location));    
         }
     });
-    console.log(all.length);
-    console.log(contactArr.length);
     var start = '<div class="row">';
     var temp = '';
     var tempcount  = 0;
@@ -125,16 +124,24 @@ function generateContactlist() {
     console.log('done');
 }
 
-function generateContactTemplate(image, name, role, major, location) {
 
+function chat() {
+    
+  //  setTimeout(function() {
+    // $(".chat-panel").css("display", "inline-block");
+    // $(".notification-panel").css("display", "none");
+//}, 100);
+    
+}
+function generateContactTemplate(image, name, role, major, location) {
     var contact = '<div class="col-sm-6"><div class="media">' +
         '<a class="pull-left" href="#"><img class="media-object" src="images/' + image + '.jpg">' +
         '</a><div class="media-body innerAll half"><h4 class="media-heading padding-none">' +
         '<a href="#timeline-Contact">' + name + '</a>' +
         '</h4><small class="text-success"><i class="fa fa-check"></i> ' + role + '</small>' +
         '<p>' + major + ', ' + location + '</p></div><div class="innerT half">' +
-        '<a href="" class="btn btn-info btn-xs"><i class="fa fa-thumbs-up"></i> Like</a>' +
-        '<a href="" class="btn btn-primary btn-xs margin-top "><i class="fa fa-envelope-o"></i> Chat</a>' +
+        '<a href="" class="btn btn-info btn-xs" id="likeBtn"><i class="fa fa-thumbs-up"></i> Like</a>' +
+        '<a href="#chatingPanel" class="btn btn-primary btn-xs margin-top "><i class="fa fa-envelope-o"></i> Chat</a>' +
         '</div></div></div>';
 
     return contact;

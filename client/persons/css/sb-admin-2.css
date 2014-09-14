@@ -8,12 +8,40 @@ body {
     background-color: #f8f8f8;
 }
 
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+#likeBtn {
+    display: none;
+}
+
+.navbar-static-top {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: black;
+}
+
+.btn-primary {
+    background-color: #4eb980;
+}
+a{
+    color: #4eb980;
+}
 #wrapper {
     width: 100%;
 }
 
 .main-content {
     /*display: none;*/
+}
+
+/*.chat-panel {
+    display: none;   
+}*/
+
+.notification-panel {
+    display: none;
 }
 
 
