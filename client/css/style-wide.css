@@ -41,5 +41,7 @@
 
 
 		.pContent {
-			font-size: 65%;
+			font-size: 80%;
+			font: "Serif";
+			line-height: 150%;
 		}
