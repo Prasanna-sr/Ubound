@@ -38,57 +38,57 @@ $("#btnSearch").click(function() {
 var all = [{
     "image": 1,
     "name": "Annie",
-    "role": "Advisor",
-    "major": "CS",
+    "role": "Mills",
+    "major": "Computer Science",
     "location": "Oakland, California"
 }, {
     "image": 13,
     "name": "Emily",
-    "role": "Advisor",
+    "role": "USF",
     "major": "Music",
     "location": "San Francisco, California"
 }, {
     "image": 23,
     "name": "Stephanie",
-    "role": "Advisor",
+    "role": "University santa clara",
     "major": "Arts",
-    "location": "San clara, California"
+    "location": "San Clara, California"
 }, {
     "image": 22,
     "name": "Robin",
-    "role": "Advisor",
+    "role": "NYU",
     "major": "Robotics",
-    "location": "New York City"
+    "location": "New York, New York"
 }, {
     "image": 20,
     "name": "Smith",
-    "role": "Advisor",
+    "role": "SJSU",
     "major": "CS",
-    "location": "San jose, California"
+    "location": "San Jose, California"
 }, {
     "image": 9,
     "name": "Eva",
-    "role": "Advisor",
-    "major": "CS",
+    "role": "UC, Berkeley",
+    "major": "Computer Science",
     "location": "Berkley, California"
 }, {
     "image": 10,
     "name": "Mark",
-    "role": "Advisor",
-    "major": "Sports",
-    "location": "San jose, California"
+    "role": "SJSU",
+    "major": "Accounting",
+    "location": "San Jose, California"
 }, {
     "image": 14,
     "name": "Finn",
-    "role": "Advisor",
-    "major": "Science",
-    "location": "Berkley, California"
+    "role": "UC, Berkeley",
+    "major": "Rhetoric",
+    "location": "Berkeley, California"
 }, {
     "image": 2,
     "name": "Micheal",
-    "role": "Advisor",
-    "major": "Arts",
-    "location": "Palo alto, California"
+    "role": "Stanford",
+    "major": "Fine Arts",
+    "location": "Palo Alto, California"
 }];
 
 
@@ -103,7 +103,7 @@ function generateContactlist() {
 
     var contactArr = [];
     all.forEach(function(obj) {
-        if(((obj.major).indexOf(search) > -1  || (obj.location).indexOf(search) > -1)) {
+        if(((obj.major).indexOf(search) > -1  || (obj.location).indexOf(search) > -1) || (obj.role).indexOf(search) > -1) {
             contactArr.push(generateContactTemplate(obj.image, obj.name, obj.role, obj.major, obj.location));    
         }
     });

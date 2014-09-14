@@ -8,6 +8,9 @@ body {
     background-color: #f8f8f8;
 }
 
+.imgChat {
+    height: 50px;
+}
 .navbar-default .navbar-brand {
     color: white;
 }

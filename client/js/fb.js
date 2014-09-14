@@ -25,7 +25,7 @@
   // // Button.  See the onlogin handler attached to it in the sample
   // // code below.
   function checkLoginState() {
-    alert('ok');
+    //alert('ok');
     FB.getLoginStatus(function(response) {
       statusChangeCallback(response);
     });
@@ -74,7 +74,7 @@
     console.log('Welcome!  Fetching your information.... ');
     FB.api('/me', function(response) {
       console.log('Successful login for: ' + response.name);
-      alert('perosn');
+      //alert('perosn');
       //document.getElementById('status').innerHTML ='Thanks for logging in, ' + response.name + '!';
       window.location.href = "/persons/index.html";
     });
