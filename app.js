@@ -12,6 +12,16 @@ app.get('/test', function(req,res) {
 });
 
 
+app.get('/', function(req, res) {
+
+    res.render('index.html');
+});
+
+// app.get('/persons', function(req, res) {
+
+//     res.render('index.html');
+// });
+
 app.listen(3000, function() {
 	console.log('server running in port 3000');
 });
