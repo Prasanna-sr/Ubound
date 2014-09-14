@@ -26,7 +26,11 @@ $(function() {
         }
     })
 });
-
+function schoolsClick() {
+    $('.main-content').css("display", "none");
+    $('.school-content').css("display", "inline-block");
+    //alert('asdsadsadsa');
+}
 
 
 

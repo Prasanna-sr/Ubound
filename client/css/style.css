@@ -322,7 +322,7 @@
 			-ms-transition: opacity 0.25s ease-in-out;
 			transition: opacity 0.25s ease-in-out;
 /*			background-image: url("images/overlay.png");*/
-			/*background-image: url("images/happykids.jpg");*/
+			background-image: url("images/happykids.jpg");
 			content: '';
 			display: block;
 			height: 100%;
@@ -833,7 +833,7 @@ input[type="submit4"],
 	#header {
 		background-attachment: scroll,							scroll,					fixed;
 /*		background-image: url("images/top-3200.svg"), url("images/overlay.png"), url("../images/header.jpg");*/
-		/*background-image: url("images/top-3200.svg"), url("images/happykids.jpg"), url("../images/happykids.jpg");*/
+		background-image: url("images/top-3200.svg"), url("images/happykids.jpg"), url("../images/happykids.jpg");
 		background-position: bottom center,					top left,				center center;
 		background-repeat: repeat-x,						repeat,					no-repeat;
 		background-size: 3200px 460px,					auto,					cover;
@@ -924,7 +924,7 @@ input[type="submit4"],
 	#footer {
 		background-attachment: scroll;
 		background-color: #4eb980;
-		/*background-image: url("images/bottom-3200.svg");*/
+		background-image: url("images/bottom-3200.svg");
 		background-position: top center;
 		background-repeat: repeat-x;
 		background-size: 3200px 460px;
